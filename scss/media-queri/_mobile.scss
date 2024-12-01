@@ -1,0 +1,114 @@
+@media (max-width: 425px) {
+    body {
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        background-color: white;
+
+        header {
+            .contenedor-header.fixed-top {
+                justify-items: center;
+                justify-content: start;
+                text-align: center;
+                font-size: 11px;
+                margin: 0px;
+                padding: 0px;
+                border: 2px solid blue;
+
+                .bloque-header {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: justify;
+                    width: 90%;
+                    height: auto;
+                    margin: 0px;
+                    padding: 10px;
+                    border: 2px solid red;
+                    p{
+                        text-align: center;
+                        font-size: 4vw;
+                    }
+                }
+            }
+            .container-fluid{
+                padding: 0px;
+                display: flex;
+                justify-content: start;
+                border: 2px solid red;
+
+            }
+        }
+
+        main {
+            .seccion-principal {
+                display: block;
+            }
+
+            .contenedor-titulo {
+                justify-items: center;
+            }
+        }
+
+        footer {
+
+            .info-footer {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                padding: 0px;
+                width: 425px;
+
+                div {
+                    background-color: beige;
+                    margin: 10px;
+                    padding: 10px;
+                    font-size: 10px;
+
+
+                    h6 {
+                        padding: 10px;
+                    }
+
+                    p {
+                        padding: 10px;
+                    }
+
+                    a {
+                        padding: 10px;
+                    }
+                }
+
+
+            }
+
+            .datos-contacto {
+                div {
+                    h5 {
+                        font-size: 15px;
+                    }
+
+                    ul {
+
+
+                        li {
+
+                            a {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .parrafo-footer {
+                font-size: 10px;
+            }
+        }
+    }
+
+    /* Estilos para pantallas de 600px o menos */
+}

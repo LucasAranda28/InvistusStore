@@ -1,0 +1,138 @@
+@import "../utilities/variables";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.fondo-principal {
+    height: 400px;
+    margin: 215px 0px 0px 0px;
+    background-image: url(../img/fondo-principal.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor-titulo {
+    background-color: black;
+    color: aliceblue;
+
+    .titulo-principal {
+        padding: 15px 40px;
+        color: $color-titulo;
+
+        span {
+            color: yellow;
+        }
+    }
+
+    .sub-titulo {
+        padding: 15px 40px;
+        color: white;
+        font-weight: 500;
+        font-size:x-large;
+    }
+}
+
+.seccion-principal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
+    gap: 35px;
+    margin: 40px;
+
+    .banner {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/5;
+        //background-color: rgba(120, 121, 126, 0.986);
+        border: 2px solid black;
+        border-radius: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: whitesmoke;
+        //text-align: center;
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+            text-align: center;
+
+            li {
+                margin: 25px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.3rem;
+                    font-weight: 510;
+                }
+            }
+        }
+    }
+
+    .ofertas {
+        display: grid;
+        grid-column: 2/5;
+        grid-row: 1/3;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+        .card {
+            background-size: 500px;
+            background-position: center center;
+            border: 2px solid purple;
+            border-radius: 15px;
+
+            .texto {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 15px;
+                color: black;
+                -webkit-text-stroke: 0.2px white;
+                font-size: 3rem;
+
+                p {
+                    color: rebeccapurple;
+                    -webkit-text-stroke: 0.2px gray;
+                    font-size: large;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .otros-productos {
+        display: grid;
+        grid-column: 2/5;
+        grid-row: 3/5;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        border-radius: 2px;
+        gap: 30px;
+
+        .card {
+            background-size: 1200px;
+            background-position: center center;
+            border: 2px solid purple;
+            border-radius: 15px;
+
+            .texto {
+                margin: 25px;
+                color: black;
+
+                //font-weight: bolder;
+                p {
+                    color: black;
+                    -webkit-text-stroke: 0.1px gray;
+                    font-weight: bold;
+
+                }
+
+            }
+        }
+    }
+}
