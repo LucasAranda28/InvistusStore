@@ -1,71 +1,97 @@
 @media (max-width: 425px) {
-    body {
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
 
-        background-color: white;
+    body {
+        //background-color: gray;
 
         header {
             .contenedor-header.fixed-top {
                 justify-items: center;
-                justify-content: start;
-                text-align: center;
-                font-size: 11px;
+                font-size: 10px;
                 margin: 0px;
                 padding: 0px;
-                border: 2px solid blue;
+                border-bottom: 2px solid black;
 
                 .bloque-header {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    text-align: justify;
-                    width: 90%;
+                    width: 100%;
                     height: auto;
-                    margin: 0px;
                     padding: 10px;
-                    border: 2px solid red;
-                    p{
+
+                    p {
                         text-align: center;
                         font-size: 4vw;
                     }
                 }
-            }
-            .container-fluid{
-                padding: 0px;
-                display: flex;
-                justify-content: start;
-                border: 2px solid red;
 
+                .bloque-logo {
+                    border-bottom: none;
+                }
             }
         }
 
         main {
-            .seccion-principal {
-                display: block;
+            margin: 0px;
+
+            .fondo-principal {
+                background-image: url(/img/banner_1.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
             }
 
             .contenedor-titulo {
+                width: 100%;
                 justify-items: center;
+
+                h1 {
+                    margin: 0px;
+                }
+
+                p {
+                    text-align: center;
+                }
             }
+
+            .seccion-principal {
+                display: block;
+                margin: 10px;
+
+                .banner {}
+
+                .ofertas {
+                    margin: 10px 0px;
+
+                }
+
+                .otros-productos {
+                    gap: 10px;
+
+                    .card {}
+
+                }
+            }
+
         }
 
         footer {
 
             .info-footer {
-                display: flex;
+                display: block;
                 justify-content: center;
                 text-align: center;
                 padding: 0px;
-                width: 425px;
 
                 div {
                     background-color: beige;
                     margin: 10px;
                     padding: 10px;
-                    font-size: 10px;
+                    font-size: 12px;
 
 
                     h6 {
@@ -85,7 +111,10 @@
             }
 
             .datos-contacto {
+                display: block;
+
                 div {
+
                     h5 {
                         font-size: 15px;
                     }
@@ -96,7 +125,7 @@
                         li {
 
                             a {
-                                font-size: 10px;
+                                font-size: 12px;
                             }
                         }
                     }
@@ -107,6 +136,17 @@
             .parrafo-footer {
                 font-size: 10px;
             }
+        }
+
+        .logo-fijo {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 1000;
+            width: 50px;
+            height: auto;
+            opacity: 0.9;
+
         }
     }
 

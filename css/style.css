@@ -190,61 +190,72 @@ body .logo-fijo {
 }
 
 @media (max-width: 425px) {
-  body {
-    background-color: white;
-  }
-  body * {
+  * {
     margin: 0px;
     padding: 0px;
   }
   body header .contenedor-header.fixed-top {
     justify-items: center;
-    justify-content: start;
-    text-align: center;
-    font-size: 11px;
+    font-size: 10px;
     margin: 0px;
     padding: 0px;
-    border: 2px solid blue;
+    border-bottom: 2px solid black;
   }
   body header .contenedor-header.fixed-top .bloque-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: justify;
-    width: 90%;
+    width: 100%;
     height: auto;
-    margin: 0px;
     padding: 10px;
-    border: 2px solid red;
   }
   body header .contenedor-header.fixed-top .bloque-header p {
     text-align: center;
     font-size: 4vw;
   }
-  body header .container-fluid {
-    padding: 0px;
-    display: flex;
-    justify-content: start;
-    border: 2px solid red;
+  body header .contenedor-header.fixed-top .bloque-logo {
+    border-bottom: none;
+  }
+  body main {
+    margin: 0px;
+  }
+  body main .fondo-principal {
+    background-image: url(/img/banner_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  body main .contenedor-titulo {
+    width: 100%;
+    justify-items: center;
+  }
+  body main .contenedor-titulo h1 {
+    margin: 0px;
+  }
+  body main .contenedor-titulo p {
+    text-align: center;
   }
   body main .seccion-principal {
     display: block;
+    margin: 10px;
   }
-  body main .contenedor-titulo {
-    justify-items: center;
+  body main .seccion-principal .ofertas {
+    margin: 10px 0px;
+  }
+  body main .seccion-principal .otros-productos {
+    gap: 10px;
   }
   body footer .info-footer {
-    display: flex;
+    display: block;
     justify-content: center;
     text-align: center;
     padding: 0px;
-    width: 425px;
   }
   body footer .info-footer div {
     background-color: beige;
     margin: 10px;
     padding: 10px;
-    font-size: 10px;
+    font-size: 12px;
   }
   body footer .info-footer div h6 {
     padding: 10px;
@@ -255,14 +266,26 @@ body .logo-fijo {
   body footer .info-footer div a {
     padding: 10px;
   }
+  body footer .datos-contacto {
+    display: block;
+  }
   body footer .datos-contacto div h5 {
     font-size: 15px;
   }
   body footer .datos-contacto div ul li a {
-    font-size: 10px;
+    font-size: 12px;
   }
   body footer .parrafo-footer {
     font-size: 10px;
+  }
+  body .logo-fijo {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    width: 50px;
+    height: auto;
+    opacity: 0.9;
   }
   /* Estilos para pantallas de 600px o menos */
 }
